@@ -35,6 +35,8 @@ public class LooseCoupling implements Job{
     public static void main(String[] args) {
         Lawyer lawyer = new Lawyer();
         Scientist scientist = new Scientist();
+        System.out.println("Loosely coupled code example");
+        System.out.println("------------------------------");
         LooseCoupling looseCoupling = new LooseCoupling(lawyer);
         looseCoupling.display();
         LooseCoupling looseCoupling1 = new LooseCoupling(scientist);

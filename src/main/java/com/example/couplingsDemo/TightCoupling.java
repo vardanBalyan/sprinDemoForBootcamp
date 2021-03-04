@@ -40,6 +40,8 @@ public class TightCoupling implements Job{
         Doctor doctor1 = new Doctor();
 
         TightCoupling tightCoupling = new TightCoupling(doctor1, engineer1);
+        System.out.println("Tightly coupled code example");
+        System.out.println("------------------------------");
         tightCoupling.display();
     }
 }
