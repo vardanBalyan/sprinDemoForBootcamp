@@ -8,10 +8,9 @@ import org.springframework.context.ApplicationContext;
 public class SpringDemoApplication {
 
 	public static void main(String[] args) {
-		//ClassManager classManager = new ClassManager(new SecondaryClass());
-		//classManager.printMessage();
 		ApplicationContext applicationContext = SpringApplication.run(SpringDemoApplication.class, args);
 		ClassManager classManager = applicationContext.getBean(ClassManager.class);
+		//applicationContext.getEnvironment().getProperty();
 		classManager.printMessage();
 	}
 
