@@ -1,5 +1,10 @@
 package com.example.couplingsDemo;
 
+/*
+* In this we have the Lawyer and Scientist class
+* which is loosely coupled by using the instance of Job
+* interface we're calling the display methods of both of the class.*/
+
 class Lawyer implements Job{
 
     @Override

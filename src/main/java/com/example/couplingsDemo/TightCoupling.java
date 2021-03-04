@@ -1,5 +1,10 @@
 package com.example.couplingsDemo;
 
+/*
+* In this we have Doctor and Engineer class and
+* we're directly calling the display methods of both of the
+* classes directly in the display method of TightCoupling class
+* which makes the code tightly coupled.*/
 class Doctor implements Job
 {
     @Override
