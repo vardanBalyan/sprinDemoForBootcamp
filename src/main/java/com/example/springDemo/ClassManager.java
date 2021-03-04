@@ -5,11 +5,15 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class ClassManager {
-    @Autowired
-    private MethodManager methodManager;
 
+    private MethodManager methodManager;
+    @Autowired
     public ClassManager(MethodManager methodManager) {
         this.methodManager = methodManager;
+    }
+
+    public MethodManager getMethodManager() {
+        return methodManager;
     }
 
     public void printMessage()

@@ -12,6 +12,7 @@ public class SpringDemoApplication {
 		ClassManager classManager = applicationContext.getBean(ClassManager.class);
 		//applicationContext.getEnvironment().getProperty();
 		classManager.printMessage();
+		System.out.println(classManager.getMethodManager());
 	}
 
 }
